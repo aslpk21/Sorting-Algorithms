@@ -7,7 +7,7 @@ def random_array():
     return [random.randint(0, 1000000) for _ in range(max_val)]
 
 def main():
-    A = np.sort(random_array())  # Sorted in ascending order
+    A = np.sort(random_array()) 
     B = sorted(random_array(), reverse=True)
     C = random_array()
     D = random_array()
