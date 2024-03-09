@@ -7,8 +7,8 @@ def random_array():
     return np.random.randint(0, 1000000, size=max_val)
 
 def main():
-    A = np.sort(random_array())  # Sorted in ascending order
-    B = -np.sort(-random_array())  # Sorted in descending order
+    A = np.sort(random_array())  
+    B = -np.sort(-random_array())  
     C = random_array()
     D = random_array()
     E = random_array()
