@@ -1,14 +1,14 @@
 import numpy as np
 import time
-
+import random
 max_val = 10000
 
 def random_array():
-    return np.random.randint(0, 1000000, size=max_val)
+    return [random.randint(0, 1000000) for _ in range(max_val)]
 
 def main():
-    A = np.sort(random_array())  
-    B = -np.sort(-random_array())  
+    A = np.sort(random_array())  # Sorted in ascending order
+    B = sorted(random_array(), reverse=True)
     C = random_array()
     D = random_array()
     E = random_array()
